@@ -10,12 +10,12 @@
 </head>
 <body>
     <div id="usercard"> <!--Карта профиля, человека, который к нам обратился-->
+        <p>ЫЫЫЫЫЫЫЫЫЫЫЫЫЫ</p> <!--Просто текст для проверки-->
+        <a class="link" href="https://mihailgok.ru">гыгыгыгыггы</a> <!--Просто ссылка для проверки-->
+        <p class="hint">ффффффффффф</p> <!--Просто текст-подсказка для проверки-->
+        <button id="btn" class="button">фтстлфостлоыфтсот</button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
+        <button id="btnED" class="button">сдьфыдлсьыфдсьдыфьдслфысь</button>
     </div>
-    <p>Just text</p> <!--Просто текст для проверки-->
-    <a class="link" href="https://mihailgok.ru">Link</a> <!--Просто ссылка для проверки-->
-    <p class="hint">Some little hint</p> <!--Просто текст-подсказка для проверки-->
-    <button id="btn" class="button">Show/Hide Main Button</button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
-    <button id="btnED" class="button">Enable/Disable Main Button</button>
 <script>
     tg.expand(); //расширяем на все окно
 
@@ -26,5 +26,33 @@
     tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
 
 </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+        #usercard {
+            display: flex;
+            background: #000;
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+        }
+        #btn {
+            padding: 5px 10px;
+            border: none;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            max-width: 50%;
+            color: #eee;
+            border-radius: 5px;
+        }
+    </style>
 </body>
 </html>
